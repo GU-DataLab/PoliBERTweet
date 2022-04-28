@@ -1,19 +1,34 @@
-# PoliBERTweet
-A transformer-based language model trained on politics-related Twitter data. This repo is the official resource of the paper "PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter", LREC 2022. 🚀
+# 🎉 PoliBERTweet 🎊
+A transformer-based language model trained on politics-related Twitter data. This repo is the official resource of the paper "PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter", LREC 2022.
 
-## Pre-trained Models
+## 📚 Data Sets
+The data sets for the evaluation tasks presented in [our paper](XXX) are available below.
+
+- Task 1: Perplexity - [XXX](XXX)
+- Task 2: Masked Token Prediction - [XXX](XXX)
+- Task 3: Stance detection - [XXX](XXX)
+
+## 🚀 Pre-trained Models
 
 All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗 so you can load model with **just three lines of code**!!!
 
 - [xxx](https://huggingface.co/kornosk/xxx) - Feel free to fine-tune this to any downstream task 🎯
 
-## Usage
+## ⚙️ Usage
 
 We tested in `pytorch v1.8.1` and `transformers v4.5.1`.
 
-Please see specific model pages above for more usage detail. Below is a sample use case. 
+Please see specific model pages above for more usage detail. Below is a sample use case.
 
-### 1. Choose and load model for stance detection
+### Task 1: Perplexity
+XXX
+
+### Task 2: Masked Token Prediction
+XXX
+
+### Task 3: Stance detection
+
+#### 1. Choose and load model for stance detection
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -29,7 +44,7 @@ tokenizer = AutoTokenizer.from_pretrained(pretrained_LM_path)
 model = AutoModelForSequenceClassification.from_pretrained(pretrained_LM_path)
 ```
 
-### 2. Get a prediction (see more in `sample_predict.py`)
+#### 2. Get a prediction (see more in `sample_predict.py`)
 ```python
 id2label = {
     0: "AGAINST",
@@ -52,7 +67,7 @@ print("Neutral:", predicted_probability[2])
 # please consider citing our paper if you feel this is useful :)
 ```
 
-## Citation
+## ✏️ Citation
 If you feel our paper and resources are useful, please consider citing our work! 🙏
 ```bibtex
 @inproceedings{kawintiranon2022polibertweet,
