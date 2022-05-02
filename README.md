@@ -12,7 +12,7 @@ The data sets for the evaluation tasks presented in [our paper](XXX) are availab
 
 All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗 so you can load model with **just three lines of code**!!!
 
-- [xxx](https://huggingface.co/kornosk/xxx) - Feel free to fine-tune this to any downstream task 🎯
+- [PoliBERTweet-mlm](https://huggingface.co/kornosk/polibertweet-mlm) - Feel free to fine-tune this to any downstream task 🎯
 
 ## ⚙️ Usage
 
@@ -71,11 +71,10 @@ print("Neutral:", predicted_probability[2])
 If you feel our paper and resources are useful, please consider citing our work! 🙏
 ```bibtex
 @inproceedings{kawintiranon2022polibertweet,
-    title={PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter},
-    author={Kawintiranon, Kornraphop and Singh, Lisa},
-    booktitle={xxx},
-    year={2022},
-    publisher={Association for Computational Linguistics},
-    url={xxx}
+  title     = {PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter},
+  author    = {Kawintiranon, Kornraphop and Singh, Lisa},
+  booktitle = {Proceedings of the Language Resources and Evaluation Conference},
+  year      = {2022},
+  publisher = {European Language Resources Association}
 }
 ```
