@@ -4,9 +4,9 @@ Transformer-based language models pre-trained on a large amount of politics-rela
 ## 📚 Data Sets
 The data sets for the evaluation tasks presented in [our paper](XXX) are available below.
 
-- Task 1: Perplexity - [XXX](XXX)
-- Task 2: Masked Token Prediction - [XXX](XXX)
-- Task 3: Stance detection - [XXX](XXX)
+- Task 1: Perplexity - [Link](https://portals.mdi.georgetown.edu/public)
+- Task 2: Masked Token Prediction - [Link](https://portals.mdi.georgetown.edu/public)
+- Task 3: Stance detection - [Link](https://github.com/GU-DataLab/stance-detection-KE-MLM)
 
 ## 🚀 Pre-trained Models
 
@@ -20,50 +20,34 @@ We tested in `pytorch v1.8.1` and `transformers v4.5.1`.
 
 Please see specific model pages above for more usage detail. Below is a sample use case.
 
-### Task 1: Perplexity
-XXX
-
-### Task 2: Masked Token Prediction
-XXX
-
-### Task 3: Stance detection
-
-#### 1. Choose and load model for stance detection
-
+### Example for Masked Token Prediction
 ```python
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import AutoModel, AutoTokenizer, pipeline
 import torch
-import numpy as np
+
+# choose GPU if available
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # select mode path here
-# see more at https://huggingface.co/kornosk
-pretrained_LM_path = "kornosk/xxx"
+pretrained_LM_path = "kornosk/polibertweet-mlm"
 
 # load model
 tokenizer = AutoTokenizer.from_pretrained(pretrained_LM_path)
-model = AutoModelForSequenceClassification.from_pretrained(pretrained_LM_path)
-```
+model = AutoModel.from_pretrained(pretrained_LM_path)
 
-#### 2. Get a prediction (see more in `sample_predict.py`)
-```python
-id2label = {
-    0: "AGAINST",
-    1: "FAVOR",
-    2: "NONE"
-}
+# fill mask
+example = "Trump is the <mask> of USA"
+fill_mask = pipeline('fill-mask', model=model, tokenizer=tokenizer)
 
-##### Prediction Favor #####
-sentence = "Go Go Biden!!!"
-inputs = tokenizer(sentence, return_tensors="pt")
+outputs = fill_mask(example)
+print(outputs)
+
+# see embeddings
+inputs = tokenizer(example, return_tensors="pt")
 outputs = model(**inputs)
-predicted_probability = torch.softmax(outputs[0], dim=1)[0].tolist()
+print(outputs)
 
-print("Sentence:", sentence)
-print("Prediction:", id2label[np.argmax(predicted_probability)])
-print("Against:", predicted_probability[0])
-print("Favor:", predicted_probability[1])
-print("Neutral:", predicted_probability[2])
-
+# OR you can use this model to train on your downstream task!
 # please consider citing our paper if you feel this is useful :)
 ```
 
