@@ -1,5 +1,6 @@
 # 🎊 PoliBERTweet: Language Models for Political Tweets
-Transformer-based language models pre-trained on a large amount of politics-related Twitter data (83M tweets). This repo is the official resource of the paper -- [PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter](XXX), LREC 2022.
+Transformer-based language models pre-trained on a large amount of politics-related Twitter data (83M tweets). This repo is the official resource of the following paper.
+- [PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter](XXX), LREC 2022.
 
 ## 📚 Data Sets
 The data sets for the evaluation tasks presented in [our paper](XXX) are available below.
