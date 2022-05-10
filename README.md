@@ -38,7 +38,7 @@ model = AutoModel.from_pretrained(pretrained_LM_path)
 
 # fill mask
 example = "Trump is the <mask> of USA"
-fill_mask = pipeline('fill-mask', model=model, tokenizer=tokenizer)
+fill_mask = pipeline('fill-mask', model=pretrained_LM_path, tokenizer=tokenizer)
 
 outputs = fill_mask(example)
 print(outputs)
