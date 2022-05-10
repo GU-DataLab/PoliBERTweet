@@ -4,15 +4,15 @@ Transformer-based language models pre-trained on a large amount of politics-rela
 ## 📚 Data Sets
 The data sets for the evaluation tasks presented in [our paper](XXX) are available below.
 
-- Task 1: Perplexity - [Link](https://portals.mdi.georgetown.edu/public)
-- Task 2: Masked Token Prediction - [Link](https://portals.mdi.georgetown.edu/public)
-- Task 3: Stance detection - [Link](https://github.com/GU-DataLab/stance-detection-KE-MLM)
+- Poli-Test - [Link](https://portals.mdi.georgetown.edu/public)
+- NonPoli-Test - [Link](https://portals.mdi.georgetown.edu/public)
+- Stance Data Set - [Link](https://github.com/GU-DataLab/stance-detection-KE-MLM)
 
 ## 🚀 Pre-trained Models
 
 All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗 so you can load model with **just three lines of code**!!!
 
-- [PoliBERTweet-mlm](https://huggingface.co/kornosk/polibertweet-mlm) - Feel free to fine-tune this to any downstream task 🎯
+- [PoliBERTweet](https://huggingface.co/kornosk/polibertweet-mlm) - Feel free to fine-tune this to any downstream task 🎯
 
 ## ⚙️ Usage
 
