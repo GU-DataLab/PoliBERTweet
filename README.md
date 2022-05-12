@@ -1,19 +1,19 @@
 # 🎊 PoliBERTweet: Language Models for Political Tweets
 Transformer-based language models pre-trained on a large amount of politics-related Twitter data (83M tweets). This repo is the official resource of the following paper.
-- [PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter](XXX), LREC 2022.
+- [PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter](https://lrec2022.lrec-conf.org/en/conference-programme/accepted-papers/), LREC 2022.
 
 ## 📚 Data Sets
-The data sets for the evaluation tasks presented in [our paper](XXX) are available below.
+The data sets for the evaluation tasks presented in [our paper](https://lrec2022.lrec-conf.org/en/conference-programme/accepted-papers/) are available below.
 
-- Poli-Test & NonPoli-Test - [[Data](https://portals.mdi.georgetown.edu/public)] [[Paper](XXX)]
+- Poli-Test & NonPoli-Test - [Coming Soon]
 - Stance Data Sets - [[Data](https://portals.mdi.georgetown.edu/public/stance-detection-KE-MLM)] [[Paper](https://aclanthology.org/2021.naacl-main.376/)] [[Github](https://github.com/GU-DataLab/stance-detection-KE-MLM)]
 
 ## 🚀 Pre-trained Models
 
 All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗 so you can load model with **just three lines of code**!!!
 
-- [PoliBERTweet](https://huggingface.co/kornosk/polibertweet-mlm) - Feel free to fine-tune this to any downstream task 🎯
-- [PoliBERTweet-small](https://huggingface.co/kornosk/polibertweet-mlm-small)
+- [PoliBERTweet](https://huggingface.co/kornosk/polibertweet-mlm) (83M tweets) - Feel free to fine-tune this to any downstream task 🎯
+- [PoliBERTweet-small](https://huggingface.co/kornosk/polibertweet-mlm-small) (5M tweets)
 
 ## ⚙️ Usage
 
