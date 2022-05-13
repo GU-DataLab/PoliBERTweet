@@ -17,9 +17,9 @@ All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗
 
 ## ⚙️ Usage
 
-We tested in `pytorch v1.8.1` and `transformers v4.5.1`.
+We tested in `pytorch v1.10.2` and `transformers v4.18.0`.
 
-Please see specific model pages above for more usage detail. Below is a sample use case.
+Please see specific model pages above for more usage details. Below is a sample use case.
 
 ### Example for Masked Token Prediction
 ```python
