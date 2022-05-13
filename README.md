@@ -5,7 +5,7 @@ Transformer-based language models pre-trained on a large amount of politics-rela
 ## 📚 Data Sets
 The data sets for the evaluation tasks presented in [our paper](https://lrec2022.lrec-conf.org/en/conference-programme/accepted-papers/) are available below.
 
-- Poli-Test & NonPoli-Test - [Coming Soon]
+- ~~Poli-Test & NonPoli-Test~~ - [[Coming Soon](ComingSoon)]
 - Stance Data Sets - [[Data](https://portals.mdi.georgetown.edu/public/stance-detection-KE-MLM)] [[Paper](https://aclanthology.org/2021.naacl-main.376/)] [[Github](https://github.com/GU-DataLab/stance-detection-KE-MLM)]
 
 ## 🚀 Pre-trained Models
