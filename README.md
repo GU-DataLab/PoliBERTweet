@@ -19,31 +19,32 @@ All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗
 
 We tested in `pytorch v1.10.2` and `transformers v4.18.0`.
 
-Please see specific model pages above for more usage details. Below is a sample use case.
+- To fine-tune our models for a specific task (e.g. stance detection), see the [Huggingface Doc](https://huggingface.co/docs/transformers/training)
+- Please see specific model pages above for more usage details. Below is a sample use case.
 
 ### Example for Masked Token Prediction
 ```python
 from transformers import AutoModel, AutoTokenizer, pipeline
 import torch
 
-# choose GPU if available
+# Choose GPU if available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# select mode path here
+# Select mode path here
 pretrained_LM_path = "kornosk/polibertweet-mlm"
 
-# load model
+# Load model
 tokenizer = AutoTokenizer.from_pretrained(pretrained_LM_path)
 model = AutoModel.from_pretrained(pretrained_LM_path)
 
-# fill mask
+# Fill mask
 example = "Trump is the <mask> of USA"
 fill_mask = pipeline('fill-mask', model=pretrained_LM_path, tokenizer=tokenizer)
 
 outputs = fill_mask(example)
 print(outputs)
 
-# see embeddings
+# See embeddings
 inputs = tokenizer(example, return_tensors="pt")
 outputs = model(**inputs)
 print(outputs)
