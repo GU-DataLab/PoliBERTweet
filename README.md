@@ -22,7 +22,7 @@ We tested in `pytorch v1.10.2` and `transformers v4.18.0`.
 - To fine-tune our models for a specific task (e.g. stance detection), see the [Huggingface Doc](https://huggingface.co/docs/transformers/training)
 - Please see specific model pages above for more usage details. Below is a sample use case.
 
-### Example for Masked Token Prediction
+### 1. Load the model and tokenizer
 ```python
 from transformers import AutoModel, AutoTokenizer, pipeline
 import torch
@@ -36,14 +36,20 @@ pretrained_LM_path = "kornosk/polibertweet-mlm"
 # Load model
 tokenizer = AutoTokenizer.from_pretrained(pretrained_LM_path)
 model = AutoModel.from_pretrained(pretrained_LM_path)
+```
 
+### 2. Predict the masked word
+```python
 # Fill mask
 example = "Trump is the <mask> of USA"
 fill_mask = pipeline('fill-mask', model=pretrained_LM_path, tokenizer=tokenizer)
 
 outputs = fill_mask(example)
 print(outputs)
+```
 
+### 3. See embeddings
+```python
 # See embeddings
 inputs = tokenizer(example, return_tensors="pt")
 outputs = model(**inputs)
