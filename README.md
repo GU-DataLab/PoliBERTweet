@@ -66,8 +66,8 @@ If you feel our paper and resources are useful, please consider citing our work!
   title     = {PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter},
   author    = {Kawintiranon, Kornraphop and Singh, Lisa},
   booktitle = {Proceedings of the Language Resources and Evaluation Conference (LREC)},
-  pages     = {7360--7367},
   year      = {2022},
+  pages     = {7360--7367},
   publisher = {European Language Resources Association},
   url       = {https://aclanthology.org/2022.lrec-1.801}
 }
