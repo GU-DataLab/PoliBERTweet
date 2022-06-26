@@ -1,9 +1,9 @@
 # 🎊 PoliBERTweet: Language Models for Political Tweets
 Transformer-based language models pre-trained on a large amount of politics-related Twitter data (83M tweets). This repo is the official resource of the following paper.
-- [PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter](https://lrec2022.lrec-conf.org/en/conference-programme/accepted-papers/), LREC 2022.
+- [PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter](http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.801.pdf), LREC 2022.
 
 ## 📚 Data Sets
-The data sets for the evaluation tasks presented in [our paper](https://lrec2022.lrec-conf.org/en/conference-programme/accepted-papers/) are available below.
+The data sets for the evaluation tasks presented in [our paper](http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.801.pdf) are available below.
 
 - Poli-Test & NonPoli-Test - [[Download](https://portals.mdi.georgetown.edu/public/polibertweet-masked-token-prediction)]
 - Stance Data Sets - [[Download](https://portals.mdi.georgetown.edu/public/stance-detection-KE-MLM)] [[Paper](https://aclanthology.org/2021.naacl-main.376/)] [[Github](https://github.com/GU-DataLab/stance-detection-KE-MLM)]
@@ -65,9 +65,11 @@ If you feel our paper and resources are useful, please consider citing our work!
 @inproceedings{kawintiranon2022polibertweet,
   title     = {PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter},
   author    = {Kawintiranon, Kornraphop and Singh, Lisa},
-  booktitle = {Proceedings of the Language Resources and Evaluation Conference},
+  booktitle = {Proceedings of the Language Resources and Evaluation Conference (LREC)},
+  pages     = {7360--7367},
   year      = {2022},
-  publisher = {European Language Resources Association}
+  publisher = {European Language Resources Association},
+  url       = {https://aclanthology.org/2022.lrec-1.801}
 }
 ```
 
