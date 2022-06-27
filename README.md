@@ -12,8 +12,8 @@ The data sets for the evaluation tasks presented in [our paper](http://www.lrec-
 
 All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗 so you can load model with **just three lines of code**!!!
 
-- [PoliBERTweet](https://huggingface.co/kornosk/polibertweet-mlm) (83M tweets) - Feel free to fine-tune this to any downstream task 🎯
-- [PoliBERTweet-small](https://huggingface.co/kornosk/polibertweet-mlm-small) (5M tweets)
+- [PoliBERTweet](https://huggingface.co/kornosk/polibertweet-political-twitter-roberta-mlm) (83M tweets) - Feel free to fine-tune this to any downstream task 🎯
+- [PoliBERTweet-small](https://huggingface.co/kornosk/polibertweet-political-twitter-roberta-mlm-small) (5M tweets)
 
 ## ⚙️ Usage
 
