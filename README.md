@@ -63,7 +63,7 @@ print(outputs)
 If you feel our paper and resources are useful, please consider citing our work! 🙏
 ```bibtex
 @inproceedings{kawintiranon2022polibertweet,
-  title     = {PoliBERTweet: A Pre-trained Language Model for Analyzing Political Content on Twitter},
+  title     = {{P}oli{BERT}weet: A Pre-trained Language Model for Analyzing Political Content on {T}witter},
   author    = {Kawintiranon, Kornraphop and Singh, Lisa},
   booktitle = {Proceedings of the Language Resources and Evaluation Conference (LREC)},
   year      = {2022},
