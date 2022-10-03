@@ -19,7 +19,7 @@ All models are uploaded to my [Huggingface](https://huggingface.co/kornosk) 🤗
 
 We tested in `pytorch v1.10.2` and `transformers v4.18.0`.
 
-- To fine-tune our models for a specific task (e.g. stance detection), see the [Huggingface Doc](https://huggingface.co/docs/transformers/training)
+- To fine-tune our models for a specific task (e.g. stance detection), see the [HuggingFace Doc](https://huggingface.co/docs/transformers/training)
 - Please see specific model pages above for more usage details. Below is a sample use case.
 
 ### 1. Load the model and tokenizer
@@ -58,6 +58,9 @@ print(outputs)
 # OR you can use this model to train on your downstream task!
 # please consider citing our paper if you feel this is useful :)
 ```
+
+### 4. Fine-tune to a downstream task like stance detection
+See details in the [HuggingFace Doc](https://huggingface.co/docs/transformers/training).
 
 ## ✏️ Citation
 If you feel our paper and resources are useful, please consider citing our work! 🙏
